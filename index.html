@@ -62,8 +62,23 @@
           <li class="skills-item vip">разбрасывать шерсть по квартире.</li>
         </ul>
       </section>
-      
-      <section>
+
+      <!-- Отправка параметров визита и цены визита -->
+      <section id="visitParams">
+          var visitParams =
+          {
+             test: {myVisitParam: 20200207}
+          };
+          var goalParams =
+          {
+             order_price: 63.32,
+             currency: "RUB"
+          };
+          ym(57365350, 'params', visitParams, goalParams)        
+      </section>
+
+      <!-- Отправка парамтеров посетителя -->
+      <section id="userParams">
         <p id="param"></p>
         <form action="">
           <input type="button" onclick="ym(57365350, 'userParams', {
@@ -73,7 +88,8 @@
           });; return true;" value="Отправить параметры посетителя" />
         </form>
       </section>
-      
+
+      <!-- Цель Клик по кнопке -->
       <script type="text/javascript">
           var goalParams = {
              order_price: 1000.35,
@@ -87,6 +103,9 @@
             <input type="radio" name="answer" value="a3">Большой полосатый мух</p>
             <p><input type="submit" onsubmit="ym(57365350, 'reachGoal', 'TARGET_NAME', goalParams); return true;" value="Достижение цели Клик по кнопке"></p>
       </form>
+
+      <!-- Цель Загрузка файла -->
+
 
       <footer class="site-footer">
         <p>© Кекс, 2018</p>
