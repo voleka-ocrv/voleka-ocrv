@@ -22,7 +22,9 @@ h2 {
 .site-header {
   margin-bottom: 30px;
 }
-
+.site-header a {
+  color: #ff8c00;
+}
 .skills-item {
   margin-bottom: 15px;
   padding-left: 20px;
@@ -87,7 +89,7 @@ h2 {
 }
 
 .feedback{
-  color: #ffffff;
+  color: #000000;
 }
 
 .site-footer {
