@@ -73,11 +73,8 @@
           {
              order_price: 63.32,
              currency: "RUB"
-          };
-          
-          <script type="text/javascript" >
-            ym(57365350, 'params', visitParams, goalParams);  
-          </script>       
+          };  
+          <input type="button" onclick="ym(57365350, 'params', visitParams, goalParams); return true;" value="Отправить параметры визита" />
       </section>
 
       <!-- Отправка парамтеров посетителя -->
@@ -99,7 +96,7 @@
              currency: "RUB"
           }
       </script>
-      <form action="" method="get" onsubmit="ym(57365350, 'reachGoal', 'TARGET_NAME', goalParams); return true;">
+      <form action="" method="get">
             <p><b>Как по вашему мнению расшифровывается аббревиатура &quot;ОС&quot;?</b></p>
             <p><input type="radio" name="answer" value="a1">Офицерский состав<Br>
             <input type="radio" name="answer" value="a2">Операционная система<Br>
