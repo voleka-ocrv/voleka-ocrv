@@ -98,11 +98,17 @@
           }
       </script>
       <form action="" method="get">
-            <p><b>Как по вашему мнению расшифровывается аббревиатура &quot;ОС&quot;?</b></p>
-            <p><input type="radio" name="answer" value="a1">Офицерский состав<Br>
-            <input type="radio" name="answer" value="a2">Операционная система<Br>
-            <input type="radio" name="answer" value="a3">Большой полосатый мух</p>
-            <p><input type="submit" onsubmit="ym(57365350, 'reachGoal', 'TARGET_NAME', goalParams); return true;" value="Достижение цели Клик по кнопке"></p>
+            <p><b>а и б сидели на трубе, а - упала, б - пропала, что остальсь на трубе? &quot;ОС&quot;?</b></p>
+            <p><input type="radio" name="answer" value="a1">а<Br>
+            <input type="radio" name="answer" value="a2">и<Br>
+            <input type="radio" name="answer" value="a3">б</p>
+            <p><input type="submit" onsubmit="ym(57365350, 'reachGoal', 'SEND_FORM_POLL', goalParams); return true;" value="Достижение цели Клик по кнопке"></p>
+      </form>
+      <!-- Отправка -->
+      <form action="" method="POST" type="submit" onsubmit="ym(57365350, 'reachGoal', 'SEND_SING_UP');"> 
+        <input name="name" placeholder="Ваше имя" required> <br>
+        <input type="email" name="mail" placeholder="Ваш email" required="Введите Ваш email"> <br>
+        <button>Отправить</button>
       </form>
 
       <section class="feedback" id="feedback">
