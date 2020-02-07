@@ -112,11 +112,25 @@
         <button>Достижение цели Отправка формы</button>
       </form>
 
+      <!-- Передача стоимости заказа из формы -->
+      <script type="text/javascript">
+      var goalSendOrderForm = {
+      order_price: 8000,
+      currency: "EUR"
+      }
+      </script>
+      <form action="" method="get" onsubmit="ym(57365350, 'reachGoal', 'SEND_ORDER_FORM', goalSendOrderForm); return true;">
+      <p><b>Отправить?</b></p>
+            <p><input type="radio" name="answer" value="a1">Отправить.<Br>
+            <input type="radio" name="answer" value="a2">Отправить!<Br>
+            <input type="radio" name="answer" value="a3">Отправить, но не сейчас.</p>
+            <p><input type="submit" onsubmit="ym(57365350, 'reachGoal', 'SEND_FORM_POLL', goalParams); return true;" value="Отправка стоимости заказа"></p>
+      </form>
+
       <section class="feedback" id="feedback">
         <h1>Отзывы учеников</h1>
         <p>Теперь я настоящая наглая морда!</p>
         <img src="img/keks-background-dark.jpg">
-
       </section>
 
 
