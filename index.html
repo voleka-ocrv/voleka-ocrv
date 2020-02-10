@@ -80,15 +80,17 @@
       </script>
       <input type="button" onclick="ym(57365350, 'params', visitParams, goalVisitParams); ;return true;" value="Отправить параметры визита и цену" />
 
-      <!-- Отправка парамтеров посетителя -->
       <section id="userParams">
         <p id="param"></p>
         <form action="">
+          <!-- Отправка парамтеров посетителя -->
           <input type="button" onclick="ym(57365350, 'userParams', {
               pets: 3,
               vet: true,
               food: 14
-          });; return true;" value="Отправить параметры посетителя" />
+          });; return true;" value="Отправить параметры посетителя userParams" />
+          <!-- Установка UserID -->
+          <input type="button" onclick="ym(57365350, 'setUserID', "12345");; return true;" />
         </form>
       </section>
 
