@@ -97,27 +97,51 @@
       <!-- E-commerce-->
       <section>
         <script type="text/javascript">
-            var arguments ={
+            var arguments =
+            {
               "ecommerce": {
                 "add": {
-                    "products": [
-                        {
-                            "id": "43521",
-                            "name": "Сумка Яндекс",
-                            "price": 654.32,
-                            "brand": "Яндекс / Яndex",
-                            "category": "Аксессуары/Сумки",
-                            "quantity": 2
-                        }
-                    ]
+                "products": [
+                  {
+                  "id": "43521",
+                  "name": "Сумка Яндекс",
+                  "price": 654.32,
+                  "brand": "Яндекс / Яndex",
+                  "category": "Аксессуары/Сумки",
+                  "quantity": 2
+                  }
+                ]
                 }
               }
             };  
         </script> 
         <input type="button" onclick="dataLayer.push(arguments);;return true;" value="E-commerce add" />
       </section>
+      <section>
+        <script type="text/javascript">
+        var name="Осетинский пирог с говядиной";
+        var id='1';
+        var price='299';
+        var category='Осетинские пироги';
+        dataLayer.push({
+        "ecommerce": {
+        "detail": {
+          "products": [
+            {
+              "id": id,
+              "name" : name,
+              "price": price,
+              "brand": "Тестов",
+              "category": category
+            }
+          ]
+        }
+        }
+        });
+        </script>
+      </section>
 
-
+      <!-- Параметры посетителей -->
       <section id="userParams">
         <p id="param"></p>
         <form action="">
