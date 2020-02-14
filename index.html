@@ -2,19 +2,23 @@
 <html lang="ru">
   <head>
       <!-- Yandex.Metrika counter -->
-      <script type="text/javascript" >
-     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-     m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-     ym(57365350, "init", {
+    <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      ym(57365350, "init", {
         clickmap:true,
         trackLinks:true,
         accurateTrackBounce:true
-     });
+      });
       window.yaParams = { "Visit": 20200207 };
       ym(57365350, 'params', window.yaParams||{});
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/57365350" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript>
+      <div>
+        <img src="https://mc.yandex.ru/watch/57365350" style="position:absolute; left:-9999px;" alt="" />
+      </div>
+    </noscript>
     <!-- /Yandex.Metrika counter -->
     <meta charset="utf-8">
     <title>Инструктор Кекс</title>
@@ -58,29 +62,60 @@
           <li class="skills-item vip">разбрасывать шерсть по квартире.</li>
         </ul>
       </section>
-      <p>
-        <section>
-          <a href="https://ya.ru">Расписание</a>
-        </section>
-        <section>
-          <iframe src="https://www.google.com/maps/d/embed?mid=1XCQgM2Ze65XdUGyu4uzcE-NlAKI" width="50%" height="480"></iframe>
-        </section>
 
-      </p>
+      
+      <section>
+        <p> 
+          <a href="https://ya.ru">Расписание</a>
+        </p>
+      </section>
+      <section>
+        <p>
+          <iframe src="https://www.google.com/maps/d/embed?mid=1XCQgM2Ze65XdUGyu4uzcE-NlAKI" width="50%" height="480"></iframe>
+        </p>
+      </section>
+
+     
 
       <!-- Отправка параметров визита и цены визита -->
-      <script type="text/javascript">
-          var visitParams =
-          {
-             test: {myVisitParam: 20200207}
-          };
-          var goalVisitParams =
-          {
-             order_price: 63.32,
-             currency: "RUB"
-          };  
-      </script>
-      <input type="button" onclick="ym(57365350, 'params', visitParams, goalVisitParams); ;return true;" value="Отправить параметры визита и цену" />
+      <section>
+        <script type="text/javascript">
+            var visitParams =
+            {
+               test: {myVisitParam: 20200207}
+            };
+            var goalVisitParams =
+            {
+               order_price: 63.32,
+               currency: "RUB"
+            };  
+        </script>
+        <input type="button" onclick="ym(57365350, 'params', visitParams, goalVisitParams); ;return true;" value="Отправить параметры визита и цену" />        
+      </section>
+
+      <!-- E-commerce-->
+      <section>
+        <script type="text/javascript">
+            var arguments ={
+              "ecommerce": {
+                "add": {
+                    "products": [
+                        {
+                            "id": "43521",
+                            "name": "Сумка Яндекс",
+                            "price": 654.32,
+                            "brand": "Яндекс / Яndex",
+                            "category": "Аксессуары/Сумки",
+                            "quantity": 2
+                        }
+                    ]
+                }
+              }
+            };  
+        </script> 
+        <input type="button" onclick="dataLayer.push(arguments);;return true;" value="E-commerce add" />
+      </section>
+
 
       <section id="userParams">
         <p id="param"></p>
