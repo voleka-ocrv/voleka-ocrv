@@ -1,1 +1,3 @@
-document.getElementById('changeColor').value='lavender';
+function script(){
+    alert( 'Всем привет!' );
+}

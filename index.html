@@ -245,9 +245,19 @@
         document.getElementById('orangeButton').value='orangeButton';
       }
     </script>
-    <input id="greenButton" type="button" onclick="document.getElementById('redButton').value='red';" value="Изменить цвет кнопки" />
+    <input id="redButton" type="button" onclick="document.getElementById('redButton').value='red';" value="Изменить цвет кнопки" />
     <!-- <script src="script.js"></script> -->
     <input id="greenButton" type="button" onclick="chageButtonValue();" value="Изменить цвет кнопки" />
+    <!-- <a href ='script.js' onclick = 'change(); return false;'>кнопка</a>
+
+    button id="MyButtonID">Start</button>
+    <script src="SomeExternalJSFile.js"></script>
+    </script> -->
+
+    <form action="script.js" method="GET" target="_blank">
+      <div style="text-align: center;"><input name="submit_form" type="submit" value="START SCRIPT NOW"></div>
+    </form>
+
   </div>
 
   <footer class="site-footer">
