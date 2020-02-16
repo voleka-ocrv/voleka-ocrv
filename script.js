@@ -1,0 +1,1 @@
+document.getElementById('changeColor').value='lavender';
