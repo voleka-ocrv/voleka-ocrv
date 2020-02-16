@@ -5,7 +5,7 @@ function switchColor(obj) {
     alert(obj);
     if (id === 'redButton'){
         document.getElementById('redButton').value = 'orangeButton';
-        document.getElementById('redButton').id = 'orangeButton';
+        id = 'orangeButton';
     }
     else if (id === 'orangeButton'){
         document.getElementById('orangeButton').value = 'redButton';        
