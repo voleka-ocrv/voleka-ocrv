@@ -3,7 +3,7 @@ function switchColor(obj) {
     console.log(`На входе: obj= ${obj}, color= ${color}`);
     // let value = document.getElementById(color).value;
     // let id = document.getElementById(color).id;    
-    console.log(`value= ${value}, id= ${id}`);
+    // console.log(`value= ${value}, id= ${id}`);
     if (color === 'redButton'){
         console.log("red branch");
         document.getElementById(color).value = 'blueButton';
