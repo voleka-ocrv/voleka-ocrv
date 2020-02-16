@@ -246,25 +246,13 @@
       }
     </script>
 
-    <script src="script_default.js"></script>
-
-    <input id="redButton" type="button" onclick="document.getElementById('redButton').value='red';" value="Изменить цвет кнопки" />
-    <!-- <script src="script.js"></script> -->
+    
+    <script src="script.js"></script>
+    <input id="redButton" type="button" onclick="switchColor(this)" value="Switch color" />
     <input id="greenButton" type="button" onclick="chageButtonValue();" value="Изменить цвет кнопки" />
-    <input id="greenButton" type="button" onclick="script_default();" value="script_default" />
-
-    <!-- <a href ='script.js' onclick = 'change(); return false;'>кнопка</a>
-
-    button id="MyButtonID">Start</button>
-    <script src="SomeExternalJSFile.js"></script>
-    </script> -->
-
-    <form action="script.js" method="GET" target="_blank">
-      <div style="text-align: center;">
-        <input name="submit_form" type="submit" value="START SCRIPT NOW">
-      </div>
-    </form>
-
+    
+    <script src="script_default.js"></script>
+    <input id="orangeButton" type="button" onclick="script_default();" value="script_default" />
   </div>
 
   <footer class="site-footer">
