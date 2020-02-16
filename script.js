@@ -1,9 +1,12 @@
 function switchColor(obj) {
     let color = obj.id;
-    console.log(`На входе: obj= ${obj}, id= ${color}`);
-    let value = document.getElementById('redButton').value;
-    let id = document.getElementById('redButton').id;    
+    console.log(`На входе: obj= ${obj}, color= ${color}`);
+    let value = document.getElementById(color).value;
+    let id = document.getElementById(color).id;    
+    console.log(`value= ${value}, id= ${id}`);
+
     if (color === 'redButton'){
+        console.log("red branch");
         value = 'orangeButton';
         id = 'orangeButton';        
     }
