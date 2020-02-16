@@ -237,8 +237,14 @@
   </div>
 
   <div class="js">
-      <input id="changeColor" type="button" onclick="document.getElementById('changeColor').value='red';" value="Изменить цвет фона" />
-      <script src="script.js"></script>
+    <script>
+      function change() {
+        document.getElementById('changeColor').value='blue';
+      }
+    </script>
+    <input id="changeColor" type="button" onclick="document.getElementById('changeColor').value='red';" value="Изменить цвет кнопки" />
+    <!-- <script src="script.js"></script> -->
+    <input id="changeColor" type="button" onclick="cange()" value="Изменить цвет кнопки" />
   </div>
 
   <footer class="site-footer">
