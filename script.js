@@ -1,18 +1,14 @@
 function switchColor(obj) {
-    let id = obj.id;
+    let color = obj.id;
     console.log(`На входе: obj= ${obj}, id= ${id}`);
-    if (id === 'redButton'){
-        let value = document.getElementById('redButton').value;
-        id = document.getElementById('redButton').id;
-        console.log(`after switch red-orange: value= ${value} id= ${id}`);
-        console.log(`or switch red-orange: value= ${document.getElementById('redButton').value} id= ${document.getElementById('redButton').id}`);
-        document.getElementById('redButton').value = 'orangeButton';
-        document.getElementById('redButton').id = 'orangeButton';        
-
+    let value = document.getElementById('redButton').value;
+    let id = document.getElementById('redButton').id;    
+    if (color === 'redButton'){
+        value = 'orangeButton';
+        id = 'orangeButton';        
     }
-    // else if (id === 'orangeButton'){
-    //     document.getElementById('orangeButton').value = 'redButton';        
-    //     document.getElementById('orangeButton').id = 'redButton';
-    //     console.log(`after switch orange-red id= ${id}`);
-    // }
+    else if (color === 'orangeButton'){
+        value = 'redButton';
+        id = 'redButton'; 
+    }
 }
