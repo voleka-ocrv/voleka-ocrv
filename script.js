@@ -6,11 +6,11 @@ function switchColor(obj) {
     console.log(`value= ${value}, id= ${id}`);
     if (color === 'redButton'){
         console.log("red branch");
-        document.getElementById(color).value = 'orangeButton';
-        document.getElementById(color).id = 'orangeButton';        
+        document.getElementById(color).value = 'blueButton';
+        document.getElementById(color).id = 'blueButton';        
     }
-    else if (color === 'orangeButton'){
-        console.log("orange branch");
+    else if (color === 'blueButton'){
+        console.log("blue branch");
         document.getElementById(color).value = 'redButton';
         document.getElementById(color).id = 'redButton'; 
     }
