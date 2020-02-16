@@ -1,4 +1,3 @@
-export default function script_default(){
-    // document.getElementById('changeColor').value='lavender';
+function script_default(){
     alert( 'Всем привет!' );
 }
