@@ -101,3 +101,7 @@ h2 {
   justify-content: space-between;
   color: #999999;
 }
+
+ #greenButton { background: #73A353; }
+ .redButton { background: #C1172C; }
+ .orangeButton { background: #F7941E; }
