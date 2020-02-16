@@ -238,9 +238,9 @@
 
   <div class="js">
     <script>
-      function change() {
-        document.getElementById('changeColor').value='blue';
-      }
+      (function change() {
+        document.getElementById('changeColor').value='blue'
+      });
     </script>
     <input id="changeColor" type="button" onclick="document.getElementById('changeColor').value='red';" value="Изменить цвет кнопки" />
     <!-- <script src="script.js"></script> -->
