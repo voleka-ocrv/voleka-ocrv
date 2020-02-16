@@ -1,17 +1,17 @@
 function switchColor(obj) {
     let color = obj.id;
     console.log(`На входе: obj= ${obj}, color= ${color}`);
-    let value = document.getElementById(color).value;
-    let id = document.getElementById(color).id;    
+    // let value = document.getElementById(color).value;
+    // let id = document.getElementById(color).id;    
     console.log(`value= ${value}, id= ${id}`);
-
     if (color === 'redButton'){
         console.log("red branch");
-        value = 'orangeButton';
-        id = 'orangeButton';        
+        document.getElementById(color).value = 'orangeButton';
+        document.getElementById(color).id = 'orangeButton';        
     }
     else if (color === 'orangeButton'){
-        value = 'redButton';
-        id = 'redButton'; 
+        console.log("orange branch");
+        document.getElementById(color).value = 'redButton';
+        document.getElementById(color).id = 'redButton'; 
     }
 }
