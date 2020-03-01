@@ -1,3 +1,3 @@
 function script_default(){
-    alert( 'Всем привет!' );
+    console.log( 'Всем привет!' );
 }
