@@ -1,7 +1,11 @@
-console.log(variable1);
+let box = document.getElementById('userParams'),
+div = document.createElement('div'),
+text = document.createTextNode('Тут был я!');
 
-var variable1;
+div.classList.add('skills');
 
-let arr = ['plamp.png','apple.png','oragne.png'];
-console.log(arr[0]);
-alert('Hello!')
+document.body.appendChild(div);
+
+document.body.removeChild();
+
+console.log(div);
