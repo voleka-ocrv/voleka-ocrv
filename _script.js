@@ -8,4 +8,6 @@ document.body.appendChild(div);
 
 document.body.removeChild();
 
+document.body.innerHTML = 'Текст появился по волшебству';
+
 console.log(div);
