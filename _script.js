@@ -19,6 +19,11 @@ let btn = document.getElementsByTagName('button');
 
 console.log("btn");
 console.log(btn);
-console.log(btn[1]);
-console.log(btn.item(1));
-console.log(document.getElementById('btn1'))
+
+document.getElementById('btn2').onclick = function() {
+        alert('Вы нажали вторую кнопку');
+    };
+
+// console.log(document.getElementById('btn2'));
+// console.log(btn.item(1));
+// console.log(document.getElementById('btn1'))

@@ -209,6 +209,31 @@
       <input type="email" name="mail" placeholder="Ваш email" required="Введите Ваш email"> <br>
       <button>Достижение цели Отправка формы</button>
     </form>
+    
+    <!--образец клиента (достижение цели при отправке)-->
+    <form class="cme" action="" method="get" onsubmit="ym(57365350, 'reachGoal', 'SEND_SING_UP'); return true;">
+      <a class="cme-cls" href="/callme/"></a>
+      <div class="h6"><h2><b>ОСТАВИТЬ</b> ЗАЯВКУ</h2><span>на консультацию менеджера</span></div>
+      <div class="cme-fields">
+          <span> </span>
+          <span><input placeholder="Имя" name=" " =""="" class="cme-txt" type="text" maxlength="150"></span>
+        
+          <span> </span>
+          <span><input placeholder="Телефон" name=" " required="" class="cme-txt cme-phone" type="tel" maxlength="15"></span>
+        
+          <span>Текст сообщения</span>
+          <span><textarea name="Текст сообщения" placeholder=" " =""="" class="cme-txt"></textarea></span>
+        
+          <span><label><input name="Согласен с политикой конфиденциальности" type="checkbox"> Согласен с политикой конфиденциальности</label></span>
+        </div>
+  
+      <span class="cme-btn-place"><span><a target="_blank" href="http://dedushka.org">Callme</a></span>
+        <button class="cme-btn" disabled="disabled" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+      </span>
+      <div class="callme-result"><div class="c_success">Спасибо, сообщение отправлено</div></div>
+  </form>
+
+
 
     <!-- Передача стоимости заказа из формы -->
     <script type="text/javascript">
