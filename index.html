@@ -48,15 +48,56 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLZTT7D" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  
 <script type="application/ld+json">
-    {  
-        "@context": "http://schema.org",
-        "@type": "Article",
-        "@id": "https://www.cosmos-web.ru/cases/hft/"
-        "headline": "Активный отдых",
-        "text": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."    
+{
+   "@context":"http://schema.org",
+   "@graph": [
+       {
+         "@type":"BreadcrumbList",
+         "itemListElement":[
+             {
+               "@type":"ListItem",
+               "position":1,      
+               "item":{
+                 "@id":"//example-news.ru/life",
+                 "name":"Жизнь"
+                }
+              },
+              {
+                 "@type":"ListItem",
+                 "position":2,
+                 "item":{
+                     "@id":"//example-news.ru/life/weather",
+                     "name":"Погода"
+                 }
+               }
+            ]
+        },
+        {
+          "@type": "NewsArticle",
+          "@id": "https://www.example-news.com/life/weather/moscow#cao",
+          "headline": "В Москве побит температурный рекорд 1922 года",
+          "alternativeHeadline": "Температура в ноябре превысила 12 °С",
+          "datePublished":"2018-12-11T08:56:49Z",
+          "dateModified":"2018-11-06T09:26:10+04:00",
+          "text": "В среду, 6 ноября, в Москве был побит температурный рекорд, зафиксированный 
+          в 1922 году. Температура воздуха составила плюс 12,1 градуса по Цельсию, 
+          как сообщает центр Фобос.",
+          "author": [
+              {"@type":"Person", "name":"Иван Иванов"}, 
+              {"@type":"Person", "name":"Петр Петров"}
+           ],
+          "about":{
+              "@type": "Event",
+              "name": "Москва"
+          },
+          "url": "https://www.example-news.com/life/weather/moscow#cao"
+        }
+    ]
 }
-    </script>
+</script>
+  
   <div class="container">
     <header class="site-header">
       <h1>Инструктор Кекс</h1>
